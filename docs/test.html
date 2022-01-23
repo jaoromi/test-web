@@ -24,17 +24,23 @@
     
     
     function action_app_instagram(android_url , ios_url , ios_appstore_url){
+        alert("1");
         var result_mo_chk = mo_chk();
+        alert("2");
     
         if(result_mo_chk!="pc"){
+            alert("3");
             if(result_mo_chk == "ios"){
-    
+                alert("4");
                 setTimeout( function() {
+                    alert("5");
                     window.open(ios_appstore_url);
                 }, 1500);
     
+                alert("6");
                 location.href = ios_url;
             }else{
+                alert("7");
                 location.href = android_url;
             }
         }
