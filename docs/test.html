@@ -28,13 +28,11 @@
     
         if(result_mo_chk!="pc"){
             if(result_mo_chk == "ios"){
-                alert("4");
                 setTimeout( function() {
-                    alert("5");
+                    alert("앱이 설치되지 않았습니다.");
                     window.open(ios_appstore_url);
                 }, 1500);
     
-                alert("6");
                 location.href = ios_url;
             }else{
                 location.href = android_url;
